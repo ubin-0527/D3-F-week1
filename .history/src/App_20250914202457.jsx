@@ -16,8 +16,8 @@ function App() {
                 author="George R. R. Martin"
                 link="https://www.amazon.ca/Storm-Swords-Song-Fire-Three/dp/0553106635"
             />
-            <Add text="+ Add New"></Add>
         </div>
+        <Add></Add>
     );
 }
 
@@ -32,7 +32,7 @@ function Book(props) {
             </div>
             <div className="details-container">
                 <h2 className="book-author">{props.author}</h2>
-                <a className="book-link" href={props.link} target="_blank">
+                <a className="book-link" href={props.link}>
                     Click to learn more
                 </a>
             </div>
@@ -42,8 +42,8 @@ function Book(props) {
 
 function Add(props) {
     return (
-        <button className="button-container" onClick={props.onClick}>
-            <h1 className="button-text">{props.text}</h1>
+        <button className="button_box">
+            <h1 className="button_text">{props.action}</h1>
         </button>
     );
 }
