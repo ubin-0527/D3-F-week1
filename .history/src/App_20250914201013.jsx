@@ -3,20 +3,15 @@ function App() {
         <div className="catalog">
             <Book
                 cover="https://m.media-amazon.com/images/I/71Jzezm8CBL.jpg"
-                author="George R. R. Martin"
+                author="George R.R. Martin"
                 link="https://www.amazon.ca/Game-Thrones-Song-Fire-Book/dp/0553103547"
             />
             <Book
-                cover="https://m.media-amazon.com/images/I/7193zyz9thL._UF1000,1000_QL80_.jpg"
-                author="George R. R. Martin"
-                link="https://www.amazon.ca/Clash-Kings-Song-Fire-Book/dp/0553108034"
+                cover="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg"
+                author="J.K. Rowling"
+                link="https://www.amazon.ca/Harry-Potter-Sorcerers-Stone-Rowling/dp/059035342X">
+
             />
-            <Book
-                cover="https://m.media-amazon.com/images/I/71hzYSMbvZL.jpg"
-                author="George R. R. Martin"
-                link="https://www.amazon.ca/Storm-Swords-Song-Fire-Three/dp/0553106635"
-            />
-            <Add text="+ Add New"></Add>
         </div>
     );
 }
@@ -32,7 +27,7 @@ function Book(props) {
             </div>
             <div className="details-container">
                 <h2 className="book-author">{props.author}</h2>
-                <a className="book-link" href={props.link} target="_blank">
+                <a className="book-link" href={props.link}>
                     Click to learn more
                 </a>
             </div>
@@ -40,14 +35,5 @@ function Book(props) {
     );
 }
 
-function Add(props) {
-    return (
-        <button className="button-container" onClick={props.onClick}>
-            <h1 className="button-text">{props.text}</h1>
-        </button>
-    );
-}
-
 export default App;
 Book;
-Add;

@@ -1,5 +1,6 @@
 .catalog {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -36,13 +37,4 @@
     width: 300px;
     height: 400px;
     align-items: center;
-    padding: 1em;
-    margin: 1em;
-    border: 5px solid black;
-    background-color: antiquewhite;
-}
-
-footer {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
 }

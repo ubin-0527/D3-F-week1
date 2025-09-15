@@ -12,11 +12,10 @@ function App() {
                 link="https://www.amazon.ca/Clash-Kings-Song-Fire-Book/dp/0553108034"
             />
             <Book
-                cover="https://m.media-amazon.com/images/I/71hzYSMbvZL.jpg"
+                cover="https://m.media-amazon.com/images/I/81r+LN3nK0L.jpg"
                 author="George R. R. Martin"
-                link="https://www.amazon.ca/Storm-Swords-Song-Fire-Three/dp/0553106635"
+                link="https://www.amazon.ca/Storm-Swords-Song-Fire-Book/dp/0553106635"
             />
-            <Add text="+ Add New"></Add>
         </div>
     );
 }
@@ -32,7 +31,7 @@ function Book(props) {
             </div>
             <div className="details-container">
                 <h2 className="book-author">{props.author}</h2>
-                <a className="book-link" href={props.link} target="_blank">
+                <a className="book-link" href={props.link}>
                     Click to learn more
                 </a>
             </div>
@@ -40,14 +39,5 @@ function Book(props) {
     );
 }
 
-function Add(props) {
-    return (
-        <button className="button-container" onClick={props.onClick}>
-            <h1 className="button-text">{props.text}</h1>
-        </button>
-    );
-}
-
 export default App;
 Book;
-Add;

@@ -1,7 +1,6 @@
 .catalog {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: ;
 }
 
 .header_text {
@@ -19,7 +18,6 @@
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    margin: 1em;
 }
 
 .book-cover {
@@ -30,19 +28,4 @@
     text-align: center;
     font-family: helvetica, arial, sans-serif;
     font-size: 1em;
-}
-
-.button-container {
-    width: 300px;
-    height: 400px;
-    align-items: center;
-    padding: 1em;
-    margin: 1em;
-    border: 5px solid black;
-    background-color: antiquewhite;
-}
-
-footer {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
 }

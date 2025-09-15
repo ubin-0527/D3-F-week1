@@ -1,0 +1,16 @@
+.excerpt {
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto;
+    border: 1px solid;
+}
+
+.book-container {
+    background-color: rgb(118, 89, 27);
+    width: 300px;
+    display: flex;
+}
+
+.book-cover {
+    width: 200px;
+}
